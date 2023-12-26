@@ -5,7 +5,7 @@ import { Home, About, Projects, Contact } from "./pages";
 
 const App = () => {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-full flex flex-col">
       <Router>
         <Navbar />
         <div className="flex-1">

@@ -1,7 +1,6 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
   car,
-  contact,
   css,
   estate,
   express,
@@ -9,21 +8,17 @@ import {
   github,
   html,
   javascript,
-  linkedin,
   mongodb,
-  motion,
   mui,
   nextjs,
   nodejs,
   pricewise,
   react,
-  redux,
-  sass,
   snapgram,
-  summiz,
   tailwindcss,
   threads,
-  typescript,
+  python,
+  java,
 } from "../assets/icons";
 
 export const skills = [
@@ -63,10 +58,21 @@ export const skills = [
     type: "Database",
   },
   {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
+    imageUrl:java,
+    name:"Java",
+    type: "Frontend",
   },
+  {
+    imageUrl: python,
+    name: "Python",
+    type: "Frontend",
+  },
+
+  // {
+  //   imageUrl: motion,
+  //   name: "Motion",
+  //   type: "Animation",
+  // },
   {
     imageUrl: mui,
     name: "Material-UI",
@@ -87,35 +93,35 @@ export const skills = [
     name: "React",
     type: "Frontend",
   },
-  {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
-  },
-  {
-    imageUrl: sass,
-    name: "Sass",
-    type: "Frontend",
-  },
+  // {
+  //   imageUrl: redux,
+  //   name: "Redux",
+  //   type: "State Management",
+  // },
+  // {
+  //   imageUrl: sass,
+  //   name: "Sass",
+  //   type: "Frontend",
+  // },
   {
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
   },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
-  },
+  // {
+  //   imageUrl: typescript,
+  //   name: "TypeScript",
+  //   type: "Frontend",
+  // },
 ];
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Java Developer",
+    company_name: "Second Year of Engineering",
+    icon: java,
     iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    date: "July 2022 - Nov 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -124,11 +130,11 @@ export const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Python Developer",
+    company_name: "Second Year Engineering",
+    icon: python,
     iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2023 - Apr 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -138,47 +144,29 @@ export const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Exposys Data Lab",
+    icon: mui,
     iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2023 - June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using html, css and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Frontend Developer",
+    company_name: "Third Year Engineering",
+    icon: react,
     iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
+    date: "July 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
-];
-
-export const socialLinks = [
-  {
-    name: "Contact",
-    iconUrl: contact,
-    link: "/contact",
-  },
-  {
-    name: "GitHub",
-    iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
-  },
-  {
-    name: "LinkedIn",
-    iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
   },
 ];
 
@@ -186,49 +174,48 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Python Based Web Scraper",
     description:
       "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+    link: "https://github.com/divyashah0510/Product-Analyser",
   },
   {
     iconUrl: threads,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "iNoteBook",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "Created a full-stack Web app which performs basic crud operations with database connections",
+    link: "https://github.com/divyashah0510/inotebook",
   },
   {
     iconUrl: car,
     theme: "btn-back-blue",
-    name: "Car Finding App",
-    description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+    name: "Password Generator App",
+    description: "Designed and built a desktop app for storing passwords.",
+    link: "https://github.com/divyashah0510/PasswordGenerator",
   },
   {
     iconUrl: snapgram,
     theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    name: "Society Maintenance App",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "Built a complete java application of Society Maintenance , allowing user friendly UI and easing the societal work.",
+    link: "https://github.com/divyashah0510/sms",
   },
   {
     iconUrl: estate,
     theme: "btn-back-black",
-    name: "Real-Estate Application",
+    name: "Mail Dispatcher Application",
     description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
+      "Developed a web application for sending mass mail messages to various customers",
+    link: "https://github.com/divyashah0510/Mail_Dispatcher",
   },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
-    description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
-  },
+  // {
+  //   iconUrl: summiz,
+  //   theme: "btn-back-yellow",
+  //   name: "AI Summarizer Application",
+  //   description:
+  //     "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
+  //   link: "https://github.com/adrianhajdin/project_ai_summarizer",
+  // },
 ];
