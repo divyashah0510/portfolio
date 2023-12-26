@@ -1,7 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import Room from "../models/Room";
 import "../styles/Home.css";
+import { Suspense } from "react";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleProjects = () => {
+    navigate("/projects");
+  };
+  const handleContact = () => {
+    navigate("/contact");
+  };
   return (
     <section className="relative flex lg:flex-row flex-col h-full home-container">
       {/* {alert.show && <Alert {...alert} />} */}
@@ -14,12 +23,18 @@ const Home = () => {
         <h1 className="blue-gradient_text_h1 text-center">and UI Designer</h1>
 
         <div className="w-full flex flex-row gap-11 justify-center mt-20">
-          <button className="flex btnForHome">My Projects</button>
-          <button className="flex btnForConnecting">Connect With Me</button>
+          <button onClick={handleProjects} className="flex btnForHome">
+            My Projects
+          </button>
+          <button onClick={handleContact} className="flex btnForConnecting">
+            Connect With Me
+          </button>
         </div>
       </div>
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <Room />
+        <Suspense fallback={<p className="text-center justify-center">Loading...</p>}>
+          <Room />
+        </Suspense>
       </div>
     </section>
   );
