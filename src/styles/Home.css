@@ -33,25 +33,3 @@
   transition-duration: 400ms;
   transition-property: width, left;
 }
-
-/* Connecting button */
-
-.btnForConnecting {
-  border: 10px;
-  font-weight: 550;
-  font-size: 15px;
-  border-radius: 50px;
-  padding-right: 6px;
-  padding-left: 6px;
-  /* background-color: #D0B7FF; */
-}
-.btnForConnecting:hover {
-  border: 10px;
-  font-weight: 550;
-  font-size: 15px;
-  border-radius: 50px;
-  padding-right: 6px;
-  padding-left: 6px;
-  /* background-color: #FFB3C1; */
-  transition: all 1s ease-in-out;
-}

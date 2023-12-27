@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { FR, meta, shopify, starbucks, tesla } from "../assets/images";
 import {
   car,
   css,
@@ -210,12 +210,12 @@ export const projects = [
       "Developed a web application for sending mass mail messages to various customers",
     link: "https://github.com/divyashah0510/Mail_Dispatcher",
   },
-  // {
-  //   iconUrl: summiz,
-  //   theme: "btn-back-yellow",
-  //   name: "AI Summarizer Application",
-  //   description:
-  //     "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-  //   link: "https://github.com/adrianhajdin/project_ai_summarizer",
-  // },
+  {
+    iconUrl: FR,
+    theme: "btn-back-yellow",
+    name: "E-Commerce Web Application",
+    description:
+      "Created family owned business online web app called FitRight .",
+    link: "https://github.com/akshayrathod205/Sem5-MPR-Frontend",
+  },
 ];

@@ -1,11 +1,13 @@
 import Spline from "@splinetool/react-spline"
+import { Suspense } from "react";
+import Loading from "../components/Loading";
 
 
 const Room = () => {
   return (
-    <div>
+    <Suspense fallback={<Loading/>}>
       <Spline scene="https://prod.spline.design/qseBugCWCuuHq5v5/scene.splinecode" />
-    </div>
+    </Suspense>
   );
 }
 

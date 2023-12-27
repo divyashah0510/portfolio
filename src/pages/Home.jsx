@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import React from "react";
 import Room from "../models/Room";
 import "../styles/Home.css";
-import { Suspense } from "react";
+import { useEffect, useState } from "react";
+import Loading from "../components/Loading";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,8 +13,15 @@ const Home = () => {
   const handleContact = () => {
     navigate("/contact");
   };
+  const [isLoading, setisLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setisLoading(false);
+    }, 4000);
+  }, []);
+
   return (
-    <section className="relative flex lg:flex-row flex-col h-full home-container">
+    <section className="relative flex lg:flex-row flex-col h-screen home-container">
       {/* {alert.show && <Alert {...alert} />} */}
 
       <div className="flex-1 min-w-[50%] flex flex-col mt-24">
@@ -26,15 +35,17 @@ const Home = () => {
           <button onClick={handleProjects} className="flex btnForHome">
             My Projects
           </button>
-          <button onClick={handleContact} className="flex btnForConnecting">
+          <button onClick={handleContact} className="flex btnForHome">
             Connect With Me
           </button>
         </div>
       </div>
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <Suspense fallback={<p className="text-center justify-center">Loading...</p>}>
-          <Room />
-        </Suspense>
+        {isLoading ? (
+          <Loading />
+        ) : (
+          <Room/>
+        )}
       </div>
     </section>
   );
