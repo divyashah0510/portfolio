@@ -2,12 +2,12 @@ import Navbar from "./components/Navbar";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home, About, Projects, Contact } from "./pages";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const App = () => {
   return (
     <div className="h-full flex flex-col">
-      <SpeedInsights/>
+      {/* <SpeedInsights/> */}
       <Router>
         <Navbar />
         <div className="flex-1">
