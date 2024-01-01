@@ -32,9 +32,6 @@ const Home = () => {
         <h1 className="blue-gradient_text_h1 text-center">and UI Designer</h1>
 
         <div className="w-full flex flex-row gap-11 justify-center mt-20">
-          <button onClick={handleProjects} className="flex btnForHome">
-            My Projects
-          </button>
           <button onClick={handleContact} className="flex btnForHome">
             Connect With Me
           </button>
